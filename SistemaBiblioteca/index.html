@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Biblioteca</h1>
+    <div class="form-button">
+    <button id="busca" type="button">Search</button>
+    </div>
+    <header>
+        <div class="Barra">
+        <label for="barrinha"></label>
+        <input id="barra" name="barrinha" type="Pesquisa" placeholder="Pesquisar">
+        </div>
+
+    </header>
+    <div>
+        <p>Resultados da busca</p>
+        <p id="resultadoBusca"></p>
+    </div>
+    <h2>Cadastrar Livro</h2>
+    <div class="form-barra">
+            <label for="nomeuser"></label><br>
+            <input type="text" name="Nomeuser" id="titulo" tabindex="1" placeholder="Titulo:"><br>
+            <label for="nomeuser"></label><br>
+            <input type="text" name="nomeuser" id="autor" tabindex="1" placeholder="Autor:"><br>
+            <label for="nomeuser"></label><br>
+            <input type="text" name="nomeuser" id="ano" tabindex="1" placeholder="Ano:"><br>
+        </div>
+    <button id="cadastrar" type="button">Cadastrar</button>
+    <div>
+    <h3>Livros Cadastrados</h3>
+        <table class="minha-tabela">
+            <thead>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>Ano Publicação</th>
+                <th>Disponibilidade</th>
+            </thead>
+            <tbody id="listaLivros"></tbody>
+        </table>
+    </div>
+    <h4>Emprestar Livro</h4>
+    <div class="emprestar">
+        <label for="emprente"></label>
+        <input id="emp" name="emprente" type="Pesquisa" placeholder="Pesquisar">
+        <button id="emprestar" type="button">Emprestar</button>
+    </div>
+    <h5>Devolver Livro</h5>
+    <div class="devolver">
+        <label for="devolve"></label>
+        <input id="dev" name="devolve" type="Pesquisa" placeholder="Pesquisar">
+        <button id="devol" type="button">Devolver</button>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
